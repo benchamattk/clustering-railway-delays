@@ -24,23 +24,33 @@ The study applies **K-Prototypes clustering** for mixed-type data and benchmarks
 
 ***ข้อค้นพบหลัก:** ผลการศึกษาแสดงให้เห็นว่าการนำคุณลักษณะเชิงกลุ่ม (Categorical attributes) เช่น ประเภทสาเหตุ, ช่วงเวลาของวัน และวันที่ มาร่วมวิเคราะห์ด้วยนั้น ช่วยให้ค้นพบข้อมูลเชิงลึกที่ไม่อาจพบได้หากใช้วิธีการจัดกลุ่มที่พึ่งพาเพียงข้อมูลเชิงตัวเลขเพียงอย่างเดียว*
 
-## 🛠️ Methodology
+## Methodology
 
 The analysis workflow includes:
 
-- 🧹 **Data cleaning and validation**
-- 🔗 **Data integration** of passenger volume and incident records
-- ⚙️ **Feature engineering** for:
-  - Time-of-day categories
-  - Weekend and public-holiday flags
-  - Intermodal connectivity indicators
-- 📊 **Clustering analysis** using three methods for comparison
-- 📏 **Evaluation** using Silhouette scores *(computed via Gower distance)*
-- 📝 **Cluster profiling and interpretation**
+*ขั้นตอนการวิเคราะห์ (Analysis workflow) ประกอบด้วย:*
 
+- Data cleaning and validation
+  *การทำความสะอาดและตรวจสอบความถูกต้องของข้อมูล*
+- Data integration of passenger volume and incident records
+  *การรวมข้อมูล (Data integration) ระหว่างปริมาณผู้โดยสารและบันทึกเหตุการณ์ความล่าช้า*
+- Feature engineering for:
+  *การสกัดคุณลักษณะใหม่ (Feature engineering) สำหรับ:*
+  - Time-of-day categories
+    *การจัดกลุ่มตามช่วงเวลาของวัน*
+  - Weekend and public-holiday flags
+    *ตัวบ่งชี้วันหยุดสุดสัปดาห์และวันหยุดนักขัตฤกษ์*
+  - Intermodal connectivity indicators
+    *ตัวชี้วัดการเชื่อมต่อกับระบบขนส่งรูปแบบอื่น*
+- Clustering analysis using three methods for comparison
+  *การวิเคราะห์การจัดกลุ่มโดยใช้ 3 วิธีการเพื่อเปรียบเทียบผลลัพธ์*
+- Evaluation using Silhouette scores (computed via Gower distance)
+  *การประเมินผลด้วยคะแนน Silhouette score (คำนวณผ่านระยะห่างแบบ Gower)*
+- Cluster profiling and interpretation
+  *การสรุปคุณลักษณะของกลุ่ม (Cluster profiling) และการตีความผลลัพธ์*
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 railway-delay-clustering/
